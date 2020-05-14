@@ -1,0 +1,347 @@
+
+
+body{
+    background-color: #a6d1c9;
+    margin: 0;
+    width: 100%;
+}
+
+.menu{
+    display: flex;
+    height: 60px;
+}
+
+.ContenerPhrase{
+    display: flex;
+    width: 200px;
+}
+
+#websiteName{
+    color: #FF9815;
+    margin: auto 0 auto 15%;
+    font-size: 1.3em;
+    font-weight: 700;
+    padding: 10px;
+    border: solid 1px #FF9815;
+}
+
+.menu ul{
+    margin: auto 15%;
+    padding: 0;
+    white-space:nowrap;
+}
+
+.menu li{
+    display: inline-flex;
+    list-style: none;
+    padding: 0 20px;
+    height: 20px;
+}
+
+.menu li:nth-child(2){
+    border-right:solid 1px #DBEEFF;
+    border-left:solid 1px #DBEEFF;
+}
+
+.menu li a{
+    text-decoration: none;
+    color: #DBEEFF;
+    font-size: 1.3em;
+    font-family: "EB Garamond", sans-serif;
+    line-height: 20px;
+}
+
+.menu li a:hover{
+    color: black;
+}
+
+
+.menu li a:after{
+  content: '';
+  width: 0px;
+  height: 1px;
+  display: block;
+  background-color: #DBEEFF;
+  transition: 300ms;
+}
+
+.menu li a:hover:after{
+  width: 100%;
+}
+
+
+#firstContenerPhrase{
+    height: 85vh;
+    width: 100%;
+    display: flex;
+    animation: finish 2.5s ease forwards 4.2s;
+    position: absolute;
+    background-color: #DBEEFF;
+    z-index: 2;
+}
+
+#logo{
+    width: 1200px;
+    height: 140px;
+    margin: auto;
+}
+
+#logo text{
+    font-size: 1.5px;
+    fill: none;
+    stroke-width: 0.05;
+    stroke: white;
+    font-family: serif, sans-serif;
+}
+
+#logo text:nth-child(1){
+    stroke-dasharray: 5;
+    stroke-dashoffset: 5;
+    animation: line-anim 2s ease forwards, fill 0.5s ease forwards 3.8s;
+}
+
+#logo text:nth-child(2){
+    stroke-dasharray: 5;
+    stroke-dashoffset: 5;
+    animation: line-anim 2s ease forwards 0.3s, fill 0.5s ease forwards 3.8s;
+}
+
+#logo text:nth-child(3){
+    stroke-dasharray: 4;
+    stroke-dashoffset: 4;
+    animation: line-anim 2s ease forwards 0.6s, fill 0.5s ease forwards 3.8s;
+}
+
+#logo text:nth-child(4){
+    stroke-dasharray: 8;
+    stroke-dashoffset: 8;
+    animation: line-anim 2s ease forwards 0.9s, fill 0.5s ease forwards 3.8s;
+}
+
+#logo text:nth-child(5){
+    stroke-dasharray: 6;
+    stroke-dashoffset: 6;
+    animation: line-anim 2s ease forwards 1.2s, fill 0.5s ease forwards 3.8s;
+}
+
+#logo text:nth-child(6){
+    stroke-dasharray: 5;
+    stroke-dashoffset: 5;
+    animation: line-anim 2s ease forwards 1.5s, fill 0.5s ease forwards 3.8s;
+}
+
+#logo text:nth-child(7){
+    stroke-dasharray: 6;
+    stroke-dashoffset: 6;
+    animation: line-anim 2s ease forwards 1.8s, fill 0.5s ease forwards 3.8s;
+}
+
+#logo text:nth-child(8){
+    stroke-dasharray: 7;
+    stroke-dashoffset: 7;
+    animation: line-anim 2s ease forwards 2.1s, fill 0.5s ease forwards 3.8s;
+}
+
+@keyframes line-anim{
+    to{
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes fill{
+    from{
+        fill: transparent;
+    }
+    to{
+        fill: white;
+        stroke-dasharray: none;
+    }
+}
+
+@keyframes finish{
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
+
+/*THE BOOK*/
+
+/*THE PHRASE*/
+.thePhrase{
+    z-index: 2;
+    display: flex;
+    position: relative;
+    width: 755px;
+    height: 65px;
+    border-bottom: solid 2px #FF9815;
+    border-top: solid 2px #FF9815;
+    margin-left: 50px;
+    white-space: nowrap;
+    overflow-x: hidden;
+}
+
+.carouselPhrase{
+    color: #FF9815;
+    font-size: 25px;
+    margin: auto;
+}
+
+.carouselPhrase div{
+    text-transform: uppercase;
+    margin-right: 3rem;
+    display: inline-block;
+}
+
+
+/*IMAGE BOOK*/
+#theBook{
+    padding-top: 20px;
+    height: 540px;
+}
+
+.imageBook{
+    display: block;
+    width: 220px;
+    height: 329px;
+    margin: 150px 0 0 200px;
+    text-align: center;
+    background-color: #DBEEFF;
+    float: left;
+}
+
+.imageBook img{
+    padding-top: 10px;
+}
+
+#resume{
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 340px;
+    text-align: justify;
+}
+
+#nameResume{
+    font-weight: 700;
+    font-size: 18px;
+    margin-right: 20px;
+}
+
+#resume p{
+    position: relative;
+    margin: 0;
+    text-indent: 95px;
+    color: #DBEEFF;
+    font-size: 18px;
+    z-index: 1;
+}
+
+#resume p:nth-child(1){
+    width: 755px;
+    text-indent: 0;
+}
+
+#resume p:nth-child(2){
+    width: 755px;
+    margin-left: 100px;
+}
+
+#resume p:nth-child(3){
+    width: 755px;
+    margin-left: 200px;
+}
+
+/*BUTTON NEXT*/
+
+*:before, *:after {
+	box-sizing: border-box;
+}
+
+.cache{
+    width: 200px;
+    height: 200px;
+    clip-path: circle(50%);
+}
+
+.next{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 220px 0 0 1000px;
+    z-index: 0;
+}
+
+.cercleOrange{
+    width: 200px;
+    height: 200px;
+    background: #FF9815;
+    position: relative;
+	letter-spacing: 0.4rem;
+	transition: all 600ms cubic-bezier(0.77, 0, 0.175, 1);	
+	cursor: pointer;
+	user-select: none;
+    z-index: 1;
+}
+
+.cercleOrange a{
+    position: relative;
+	color: #a6d1c9;
+    padding: 90px 0;
+    font-size: 20px;
+    font-weight: 900;
+    width: 200px;
+    height: 200px;
+    display: block;
+    box-sizing: border-box;
+    text-align: center;
+    text-transform: uppercase;
+    z-index: 1;
+}
+
+
+.cercleOrange:before, .cercleOrange:after {
+	content: '';
+    position: absolute;
+	transition: inherit;
+}
+
+.cercleOrange a:hover {
+    position: relative;
+    z-index: 1;
+	color: black;
+	transition-delay: 0.8s;
+}
+
+.cercleOrange:hover:before {
+	transition-delay: 0s;
+}
+
+.cercleOrange:hover:after {
+	background: pink;
+	transition-delay: 0.4s;
+    transition-duration: 1s;
+}
+
+.changeColor:before, .changeColor:after {
+	left: 0;
+	height: 0;
+	width: 100%;
+}
+
+.changeColor:after {
+	top: 0;
+	height: 0;
+}
+
+.changeColor:hover:before,
+.changeColor:hover:after {
+	height: 100%;
+}
+
+
+
+
+
+
