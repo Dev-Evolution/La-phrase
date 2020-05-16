@@ -69,7 +69,7 @@ body{
   width: 100%;
 }
 
-
+/* LA PHRASE effect onload the website */
 #firstContenerPhrase{
     height: 85vh;
     width: 100%;
@@ -215,7 +215,7 @@ body{
 .imageBook img{
     padding-top: 10px;
 }
-
+/* résumé */
 #resume{
     position: absolute;
     margin-top: 50px;
@@ -259,44 +259,46 @@ body{
 	box-sizing: border-box;
 }
 
-.cache{
-    width: 200px;
-    height: 200px;
-    clip-path: circle(50%);
-}
-
-.next{
+.buttonNext{
+    display: block;
     position: relative;
     width: 200px;
     height: 200px;
     margin: 220px 0 0 1000px;
+}
+
+.nextBackgound{
+    width: 200px;
+    height: 200px;
     z-index: 0;
 }
 
 .cercleOrange{
+    clip-path: circle(50%);
     width: 200px;
     height: 200px;
     background: #FF9815;
     position: relative;
 	letter-spacing: 0.4rem;
-	transition: all 600ms cubic-bezier(0.77, 0, 0.175, 1);	
-	cursor: pointer;
+	transition: all 600ms cubic-bezier(0.25, 0.1, 0.25, 1.0);	
 	user-select: none;
-    z-index: 1;
 }
 
-.cercleOrange a{
+.buttonNext a{
+    top: -100%;
+    clip-path: circle(50%);
+    width: 200px;
+    height: 200px;
     position: relative;
 	color: #a6d1c9;
     padding: 90px 0;
     font-size: 20px;
     font-weight: 900;
-    width: 200px;
-    height: 200px;
     display: block;
     box-sizing: border-box;
     text-align: center;
     text-transform: uppercase;
+    cursor: pointer;
     z-index: 1;
 }
 
@@ -307,36 +309,31 @@ body{
 	transition: inherit;
 }
 
-.cercleOrange a:hover {
+.buttonNext a:hover {
     position: relative;
     z-index: 1;
 	color: black;
 	transition-delay: 0.8s;
 }
 
-.cercleOrange:hover:before {
+.cercleOrangeHover:before {
 	transition-delay: 0s;
 }
 
-.cercleOrange:hover:after {
+.cercleOrangeHover:after {
 	background: pink;
 	transition-delay: 0.4s;
     transition-duration: 1s;
 }
 
-.changeColor:before, .changeColor:after {
+.cercleOrange:before, .cercleOrange:after {
 	left: 0;
 	height: 0;
 	width: 100%;
 }
 
-.changeColor:after {
-	top: 0;
-	height: 0;
-}
-
-.changeColor:hover:before,
-.changeColor:hover:after {
+.cercleOrangeHover:before,
+.cercleOrangeHover:after {
 	height: 100%;
 }
 
