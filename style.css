@@ -170,7 +170,7 @@ body{
 /*THE BOOK*/
 
 /*THE PHRASE*/
-.thePhrase{
+.thePhraseScroll{
     z-index: 2;
     display: flex;
     position: relative;
@@ -183,18 +183,29 @@ body{
     overflow-x: hidden;
 }
 
-.carouselPhrase{
+.infiniteScroll{
     color: #FF9815;
     font-size: 25px;
     margin: auto;
+    position: relative;
+    animation-name: infiniteScroll;
+    animation-delay: 1s;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
 }
 
-.carouselPhrase div{
+.infiniteScroll div{
     text-transform: uppercase;
-    margin-right: 3rem;
+    margin-right: 70px;
     display: inline-block;
 }
-
+@keyframes infiniteScroll{
+    from { 
+        transform: translateX(-66.8%);  
+    }
+}
 
 /*IMAGE BOOK*/
 #theBook{
