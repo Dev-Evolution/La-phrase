@@ -1,14 +1,5 @@
 
 
-// dislay none effect on laPhrase
-function deletPhrase(){
-    let laPhrase = document.getElementById("firstContenerPhrase")
-    laPhrase.parentNode.removeChild(laPhrase)
-}
-
-window.setTimeout(deletPhrase, 6000);
-
-
 // hover effect button Next
 
 function onHover(elementHover){
